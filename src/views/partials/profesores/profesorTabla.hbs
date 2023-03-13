@@ -1,0 +1,38 @@
+<table>
+    <thead>
+        <tr>
+            <th>Num.</th>
+            <th>Rfc</th>
+            <th>Nombres</th>
+            <th>Paterno</th>
+            <th>Materno</th>
+            <th>FechaNacimiento</th>
+            <th>Direccion</th>
+            <th>Celular</th>
+            <th>Profesion</th>
+            <th>NumeroEmpleado</th>
+            <th>Acciones</th>
+        </tr>
+    </thead>
+    <tbody>
+        {{#each profesor}}
+        <tr>
+            <td>{{@index}}</td>
+            <td>{{rfc}}</td>
+            <td>{{nombres}}</td>
+            <td>{{paterno}}</td>
+            <td>{{materno}}</td>
+            <td>{{fechaNacimiento}}</td>
+            <td>{{direccion}}</td>
+            <td>{{celular}}</td>
+            <td>{{profesion}}</td>
+            <td>{{numeroEmpleado}}</td>
+            <td>
+                 <button>Status</button>
+                 <a href="/update2/{{_id}}">Editar</a>
+                 <a href="/delete2/{{_id}}">Eliminar</a>
+            </td>
+        </tr>
+        {{/each}}
+    </tbody>
+</table>
